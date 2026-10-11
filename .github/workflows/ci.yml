@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Show the Swift version
         run: swift --version
       - name: Build
@@ -18,7 +18,7 @@ jobs:
         run: swift test
       - name: Build the app (universal, ad-hoc signed)
         run: scripts/build-app.sh
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: Weatherglass
           path: dist/Weatherglass.zip
