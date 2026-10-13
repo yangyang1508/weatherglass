@@ -53,6 +53,7 @@ The menu bar shows an icon and the temperature. **Preview** lets you try any wea
 > ```
 
 **Requirements:** macOS 13 Ventura or later. Universal app: Apple silicon and Intel.
+Tested on macOS 26 Tahoe. Not tested on macOS 27 Golden Gate yet. If you run it there, please [tell me how it goes](https://github.com/yangyang1508/weatherglass/issues).
 
 ### Build from source
 
@@ -148,6 +149,9 @@ That is normal on a clear day: Weatherglass shows only rain, snow, fog, storms, 
 
 **Does it work with several displays?**
 It makes one overlay for each display. I have only tested it with one display so far. Reports are welcome.
+
+**Does it work on macOS 27 Golden Gate?**
+I have not tested it there yet. It is built with public APIs only, but window corners and the menu bar changed in recent macOS versions. If something looks wrong, please [open an issue](https://github.com/yangyang1508/weatherglass/issues) with a screenshot.
 
 **Does it slow down games or video?**
 It hides when an app is full screen. You can also pause it from the menu.
